@@ -1,0 +1,104 @@
+:root {
+    --Cor-do-texto: hsl(193, 38%, 86%);
+    --Cor-do-botão-do-card-e-do-texto: hsl(150, 100%, 66%);
+    --Cor-d0-card: hsl(217, 19%, 24%);
+    --Cor-de-fundo:  hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--Cor-de-fundo);
+    height: 100vh;
+    font-family: 'manrope';
+}
+
+.conteudo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.conteudo-principal .cartao {
+    background-color: var(--Cor-d0-card);
+    width: 750px;
+    height: 530px;
+    border-radius: 10px;
+}
+
+.conteudo-principal .numero-conselho {
+    letter-spacing:0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--Cor-do-botão-do-card-e-do-texto);
+}
+
+.texto-conselho {
+    color: var(--Cor-do-texto);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    height: 1.5em;
+    margin-top: 4em;
+
+}
+
+.botao-icone {
+    display: flex;
+    justify-content: center;
+    padding-top: 5.5em;
+
+}
+
+.botao-icone .botao {
+    display: flex;
+    padding: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    border-width: 0;
+}
+
+.botao-icone .botao:hover {
+    background-color: var(--Cor-do-botão-do-card-e-do-texto);
+    transition: 0.5s;
+    box-shadow: 0 0 10px var(--Cor-do-botão-do-card-e-do-texto),
+                0 0 10px var(--Cor-do-botão-do-card-e-do-texto),
+                0 0 10px var(--Cor-do-botão-do-card-e-do-texto),
+                0 0 10px var(--Cor-do-botão-do-card-e-do-texto);
+}
+
+@media (max-width: 658px) {
+    .conteudo-principal .cartao {
+        width: 350px;
+        height: 500px;
+    }
+    .conteudo-principal .numero-conselho{
+        font-size: 15px;
+    }
+    .texto-conselho {
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    picture {
+        height: 1em;
+    }
+
+    .botao-icone {
+        padding-top: 6.5em;
+    }
+}
